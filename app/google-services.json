@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "422388981328",
+    "firebase_url": "https://nexus-f4ba4.firebaseio.com",
+    "project_id": "nexus-f4ba4",
+    "storage_bucket": "nexus-f4ba4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422388981328:android:d0220f24a5545ba0",
+        "android_client_info": {
+          "package_name": "com.example.fayeed.nexus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422388981328-o9a4jv38muoqe2lleppoiduthkoh1e15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFuIfPnjPqvuPoeHaRP3kHTNNdRdfcFdY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

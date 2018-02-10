@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat__main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="@android:color/background_light"
+    tools:context="com.example.fayeed.nexus.Main.Chat.Chat_Main"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@color/cardview_light_background"
+        android:id="@+id/imageView32"
+        android:layout_height="55dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/bg_1"
+            android:id="@+id/imageView11"
+            android:scaleType="fitXY"
+            android:layout_height="58dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:textColor="@color/cardview_light_background"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="25dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView32">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@color/app_b"
+            android:id="@+id/imageView5"
+            android:layout_marginBottom="0dp"
+            android:scaleType="fitXY"
+            android:layout_height="70dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@color/app_s"
+            android:id="@+id/imageView38"
+            android:layout_below="@+id/imageView5"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:id="@+id/chat_top"
+                android:layout_height="70dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/news"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/chat_all_recy"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

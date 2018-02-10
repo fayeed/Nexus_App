@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_discussion__d"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.fayeed.nexus.Main.Discussion_Thread.Discussion_Detail"
+    android:weightSum="1"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@color/colorAccent"
+            android:id="@+id/imageView13"
+            android:layout_height="55dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                app:srcCompat="@drawable/back_icon_white"
+                android:id="@+id/discussiondback"
+                android:layout_weight=".01"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:text="Discussion Thread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:layout_weight="1"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="25dp"
+                android:textStyle="normal|bold"
+                android:textSize="24sp"
+                android:textColor="@color/cardview_light_background" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            app:srcCompat="@null"
+            android:id="@+id/imageView6"
+            android:scaleType="fitXY"
+            android:layout_height="120dp"
+            android:background="@color/app_b" />
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="0dp"
+                android:padding="5dp"
+                android:background="@color/cardview_light_background"
+                android:id="@+id/aa"
+                android:layout_alignParentTop="true">
+
+                <!--<ImageView
+                    app:srcCompat="@drawable/com_facebook_auth_dialog_background"
+                    android:id="@+id/discussion"
+                    android:layout_weight="0"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />-->
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:src="@drawable/com_facebook_profile_picture_blank_square"
+                    android:id="@+id/discussion"
+                    android:layout_weight="0"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    app:civ_border_color="#EEEEEE"
+                    app:civ_border_width="0dp"
+                    app:civ_shadow="false"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="0dp"
+                        android:id="@+id/topic"
+                        android:fontFamily="sans-serif"
+                        android:textSize="14sp"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textStyle="normal|bold"
+                        android:textAlignment="viewStart"
+                        android:layout_alignTop="@+id/discussion"
+                        android:layout_toRightOf="@+id/discussion"
+                        android:layout_toEndOf="@+id/discussion"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="false" />
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/smalldesc"
+                        android:layout_below="@+id/topic"
+                        android:layout_alignLeft="@+id/topic"
+                        android:layout_alignStart="@+id/topic"
+                        android:textAlignment="viewStart"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="11sp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <TextView
+                        android:text="0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/parent"
+                        android:textSize="0sp"
+                        android:layout_marginTop="0dp"
+                        android:layout_below="@+id/discussion"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/time_D"
+                        android:layout_alignBaseline="@+id/parent"
+                        android:layout_alignBottom="@+id/parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textAlignment="viewEnd"
+                        android:textSize="7sp"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="25dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:srcCompat="@color/app_s"
+                android:id="@+id/imageView43"
+                android:layout_below="@+id/aa" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/imageView43"
+                android:id="@+id/a"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    app:srcCompat="@drawable/views_g"
+                    android:id="@+id/imageButton4"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="2dp" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view"
+                    android:layout_toEndOf="@+id/imageButton4"
+                    android:layout_marginStart="10dp" />
+
+                <ImageButton
+                    app:srcCompat="@drawable/comments_g"
+                    android:id="@+id/imageButton5"
+                    android:scaleType="fitXY"
+                    android:layout_toEndOf="@+id/view"
+                    android:background="@null"
+                    android:layout_marginStart="25dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="3dp" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/threads"
+                    android:layout_toEndOf="@+id/imageButton5"
+                    android:layout_marginStart="10dp" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:srcCompat="@color/app_s"
+                android:id="@+id/imageView44"
+                android:layout_below="@+id/a" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="false"
+                android:layout_marginBottom="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/discussionrecy_d"
+                android:layout_weight="0"
+                android:layout_marginTop="0dp"
+                android:layout_centerHorizontal="false"
+                android:layout_above="@+id/can"
+                android:layout_below="@+id/imageView44"
+                android:background="@color/app_b" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/can"
+                android:layout_alignParentBottom="true">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/comments"
+                    android:layout_toStartOf="@+id/post"
+                    android:background="@color/cardview_light_background"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:maxLength="200" />
+
+                <ImageButton
+                    app:srcCompat="@drawable/send_icon"
+                    android:id="@+id/post"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

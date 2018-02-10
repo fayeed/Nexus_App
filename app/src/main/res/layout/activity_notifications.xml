@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notifications"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fayeed.nexus.Main.Notifications"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@color/colorAccent"
+            android:id="@+id/imageView13"
+            android:layout_height="55dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                app:srcCompat="@drawable/back_icon_white"
+                android:id="@+id/newspback"
+                android:layout_weight=".01"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:text="Filters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:textStyle="normal|bold"
+                android:textSize="24sp"
+                android:textColor="@color/cardview_light_background" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <TextView
+        android:text="BHHHOOOO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/line"
+        android:id="@+id/imageView21"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:text="Low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView18"
+            android:layout_weight="1" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_low"
+            android:textAlignment="viewStart"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat"
+            android:checked="false"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:text="Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/val"
+            android:layout_weight="1" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_medium"
+            android:textAlignment="viewStart"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat"
+            android:checked="false"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:text="High"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/a"
+            android:layout_weight="1" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_high"
+            android:textAlignment="viewStart"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat"
+            android:checked="false"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="0dp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="News"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/colorAccent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/line"
+        android:id="@+id/imageView22"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:text="Low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/man"
+            android:layout_weight="1" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_low"
+            android:textAlignment="viewStart"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat"
+            android:checked="false"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:text="Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/can"
+            android:layout_weight="1" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_medium"
+            android:textAlignment="viewStart"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat"
+            android:checked="false"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:text="High"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aaaaa"
+            android:layout_weight="1" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/n_high"
+            android:textAlignment="viewStart"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat"
+            android:checked="false"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

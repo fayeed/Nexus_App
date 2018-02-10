@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="0dp">
+
+        <!--<ImageView
+            app:srcCompat="@drawable/bhhooo_icon"
+            android:id="@+id/imageView16"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="40dp"
+            android:layout_width="40dp" />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/dialogbox_b_s"
+            android:id="@+id/imageView19"
+            android:scaleType="fitXY"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:text="You have been banned from the app due to exceeding the number of report or strikes or due to inapprropiate behaviur"
+            android:layout_marginLeft="20dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:text="Cancel"
+                android:id="@+id/can"
+                android:layout_weight=".01"
+                android:background="@null"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cardview_light_background"
+                android:layout_marginStart="20dp"
+                android:layout_width="160dp" />
+
+            <Button
+                android:text="Accept"
+                android:layout_height="wrap_content"
+                android:id="@+id/accept"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColor="@color/cardview_light_background"
+                android:layout_marginStart="20dp"
+                android:layout_width="160dp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

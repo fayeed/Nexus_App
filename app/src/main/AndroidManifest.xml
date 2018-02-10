@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fayeed.nexus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Main.SetPresistance"
+        android:allowBackup="true"
+        android:icon="@drawable/loginicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <service android:name=".Main.Main"
+            android:stopWithTask="false"/>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Main.Login.Login"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main.Profile.UserProfile"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Main.Profile.Edit_Profile"
+            android:label="@string/title_activity_edit__profile"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".Main.Main" />
+        <activity
+            android:name=".Main.News.News_Main"
+            android:label="@string/title_activity_news__m"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Main.News.News_Post"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Main.Discussion_Thread.Discussion_Main"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Main.Discussion_Thread.Discussion_Post"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Main.Discussion_Thread.Discussion_Detail"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Main.BHHHOOO.BHHOOO_Main" />
+        <activity android:name=".Main.BHHHOOO.BHHHOOO_Comment" />
+        <activity android:name=".Main.BHHHOOO.BHHHOOO_Post" />
+        <activity android:name=".Main.Chat.Chat_Main" />
+        <activity
+            android:name=".Main.Chat.Chat_Messaging"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+        <!--
+        <service android:name="com.amazonaws.mobile.downloader.service.DownloadService" />
+
+        <receiver
+            android:name="com.amazonaws.mobile.downloader.service.NetworkStateListener"
+            android:enabled="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.amazonaws.mobile.downloader.query.DownloadQueueProvider"
+            android:authorities="download_queue_provider_authority"
+            android:enabled="true"
+            android:exported="false" />
+        -->
+        <activity android:name=".Main.News.News_Detail" />
+        <activity android:name=".Main.Profile.SearchProfile" />
+        <activity android:name=".Main.Notifications" />
+        <activity android:name=".Main.Settings" />
+        <activity android:name=".Main.User_Bhhhooo"></activity>
+    </application>
+
+</manifest>

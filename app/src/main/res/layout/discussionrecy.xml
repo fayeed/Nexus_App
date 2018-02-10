@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="0dp"
+    android:padding="5dp"
+    android:paddingTop="0dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/cardview_light_background">
+
+    <!--<ImageView
+        app:srcCompat="@drawable/com_facebook_auth_dialog_background"
+        android:id="@+id/discussion"
+        android:layout_weight="0"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />-->
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginStart="5dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:src="@drawable/com_facebook_profile_picture_blank_square"
+            android:id="@+id/discussion"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="2dp"
+            app:civ_shadow="false"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:text="Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/discussion"
+            android:layout_toEndOf="@+id/discussion"
+            android:layout_marginTop="13dp"
+            android:textStyle="normal|bold"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <ImageView
+            app:srcCompat="@drawable/views_g"
+            android:id="@+id/imageView34"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="14dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentEnd="false"
+            android:layout_toStartOf="@+id/view"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:text="500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textSize="12sp"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentEnd="false"
+            android:layout_toStartOf="@+id/imageView35"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="5dp" />
+
+        <ImageView
+            app:srcCompat="@drawable/comments_g"
+            android:id="@+id/imageView35"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentEnd="false"
+            android:layout_toStartOf="@+id/thread"
+            android:layout_marginEnd="0dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:text="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thread"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textSize="12sp"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:id="@+id/topic"
+            android:fontFamily="sans-serif"
+            android:textSize="14sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart"
+            android:layout_alignTop="@+id/discussion"
+            android:layout_toRightOf="@+id/discussion"
+            android:layout_toEndOf="@+id/discussion"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/smalldesc"
+            android:layout_below="@+id/topic"
+            android:layout_alignLeft="@+id/topic"
+            android:layout_alignStart="@+id/topic"
+            android:textAlignment="viewStart"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="11sp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parent"
+            android:textSize="0sp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/discussion"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_D"
+            android:textSize="8sp"
+            android:layout_alignBaseline="@+id/parent"
+            android:layout_alignBottom="@+id/parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="viewEnd" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.fayeed.nexus.Main.Settings"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="412dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:id="@+id/t">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@color/colorAccent"
+            android:id="@+id/imageView13"
+            android:scaleType="fitXY"
+            android:layout_height="55dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:textStyle="normal|bold"
+                android:textSize="24sp"
+                android:textColor="@color/cardview_light_background"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight=".005"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/editpro"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/t"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            app:srcCompat="@drawable/editicon"
+            android:layout_weight=".01"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Edit Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        app:srcCompat="@drawable/line"
+        android:id="@+id/imageView23"
+        android:layout_weight=".001"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/editpro" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".005"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/logout"
+        android:paddingBottom="0dp"
+        android:layout_below="@+id/imageView23"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            app:srcCompat="@drawable/logouticon"
+            android:layout_weight=".01"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Log Out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/line"
+        android:id="@+id/imageView25"
+        android:layout_weight=".001"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/logout" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".005"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/filter"
+        android:layout_below="@+id/imageView25"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            app:srcCompat="@drawable/filter"
+            android:layout_weight=".01"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/line"
+        android:id="@+id/imageView26"
+        android:layout_weight=".001"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/filter" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".005"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/reportp"
+        android:layout_below="@+id/imageView26"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            app:srcCompat="@drawable/alert"
+            android:layout_weight=".01"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Report Problem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/line"
+        android:id="@+id/imageView27"
+        android:layout_weight=".001"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/reportp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".005"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/about"
+        android:layout_below="@+id/imageView27"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            app:srcCompat="@drawable/about"
+            android:layout_weight=".01"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="About"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/line"
+        android:id="@+id/imageView28"
+        android:layout_weight=".001"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/about" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".005"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/tandc"
+        android:layout_below="@+id/imageView28"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            app:srcCompat="@drawable/tandc"
+            android:layout_weight=".01"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Terms &amp; Conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/line"
+        android:id="@+id/imageView29"
+        android:layout_weight=".001"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/tandc" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight=".005"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/delete"
+        android:layout_below="@+id/imageView29"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            app:srcCompat="@drawable/delete_account"
+            android:id="@+id/imageView20"
+            android:layout_weight=".01"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Delete Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView19"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+</RelativeLayout>

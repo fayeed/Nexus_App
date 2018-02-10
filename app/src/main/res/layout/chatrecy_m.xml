@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    android:id="@+id/chat_l"
+    android:paddingStart="3dp"
+    android:layout_marginStart="5dp">
+
+
+    <!--<ImageView
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_square"
+        android:id="@+id/chat_main_all_image"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />-->
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:src="@drawable/com_facebook_profile_picture_blank_square"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="1dp"
+        app:civ_shadow="false"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/chat_main_all_image" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="35dp"
+        android:id="@+id/chat_main_all_text"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/chat_main_all_image"
+        android:layout_toEndOf="@+id/chat_main_all_image"
+        android:textAlignment="viewStart"
+        android:textStyle="normal|bold" />
+</RelativeLayout>

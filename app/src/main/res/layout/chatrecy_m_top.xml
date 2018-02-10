@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:id="@+id/chat_top">
+
+    <!--<ImageView
+        app:srcCompat="@drawable/com_facebook_auth_dialog_cancel_background"
+        android:id="@+id/chat_main_top_image"
+        android:padding="8dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />-->
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:src="@drawable/com_facebook_profile_picture_blank_square"
+        app:civ_border_color="#64676b"
+        app:civ_border_width="1dp"
+        app:civ_shadow="false"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/chat_main_all_image"
+        android:padding="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>

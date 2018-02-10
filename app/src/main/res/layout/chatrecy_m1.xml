@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        app:srcCompat="@drawable/chatother_box_patch"
+        android:id="@+id/chatmsgpro1"
+        android:scaleType="centerInside"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chatmsg1"
+        android:textAlignment="viewStart"
+        android:paddingTop="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="0dp"
+        android:textDirection="rtl"
+        android:background="@drawable/chatother_box_patch"
+        android:padding="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="10dp"
+        android:maxWidth="230dp"
+        android:textColor="@color/cardview_light_background"
+        android:paddingLeft="0dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="13dp" />
+
+</RelativeLayout>

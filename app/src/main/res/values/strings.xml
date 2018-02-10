@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Nexus</string>
+
+    <string name="facebook_app_id">747706912038476</string>
+
+    <string name="fb_login_protocol_scheme">fb747706912038476</string>
+    <string name="title_activity_edit__profile">Edit_Profile</string>
+    <string name="title_activity_news__m">News_M</string>
+    <string name="title_activity_news">News</string>
+</resources>
